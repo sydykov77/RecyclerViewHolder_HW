@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Main2Activity"
+    >
+
+    <TextView
+        android:id="@+id/main2_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Данные ученика"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/main_2_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+
+   <EditText
+        android:id="@+id/main_2_edit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+       android:hint="Ф.И.О."
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/main_2_class"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/main_2_classEdit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:hint="Класс"/>
+    <TextView
+        android:id="@+id/main_2_street"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/main_2_dataEdit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:hint="Местожительство"/>
+
+    <Button
+        android:id="@+id/main_2_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="0dp"
+        android:textSize="30sp"
+        android:text="Изменить"
+        android:onClick="Save"/>
+    <Button
+        android:id="@+id/main_2_BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:textSize="30sp"
+        android:text="Назад"/>
+
+</LinearLayout>
