@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
        android:hint="Ф.И.О."
-        android:textSize="20sp"/>
+        android:textSize="15sp"/>
     <TextView
         android:id="@+id/main_2_class"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         android:id="@+id/main_2_classEdit"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="Класс"/>
     <TextView
         android:id="@+id/main_2_street"
@@ -59,7 +59,7 @@
         android:id="@+id/main_2_dataEdit"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:hint="Местожительство"/>
 
     <Button
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="0dp"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:text="Изменить"
         android:onClick="Save"/>
     <Button
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="0dp"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:text="Назад"/>
 
 </LinearLayout>

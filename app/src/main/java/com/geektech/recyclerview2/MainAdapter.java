@@ -16,10 +16,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainViewHolder> {
 
     public MainAdapter() {
         data = new ArrayList<>();
-        for (int i = 1; i < 11; i++) {
+        for (int i = 1; i < 100; i++) {
             SomeClass someClass = new SomeClass();
             someClass.position = i;
-            someClass.name=i+")Ученик";
+            someClass.name=("");
             data.add(someClass);
         }
     }

@@ -20,7 +20,6 @@ public  class Main2Activity extends AppCompatActivity implements IonTextClick {
     SomeClass someClass;
     EditText streetEdit;
     EditText classEdit;
-    TextView name;
 
 
     @Override
@@ -29,12 +28,11 @@ public  class Main2Activity extends AppCompatActivity implements IonTextClick {
         setContentView(R.layout.activity_main2);
 
 
-        TextView name = findViewById(R.id.main_2_text);
+
         nameEdit = findViewById(R.id.main_2_edit);
         streetEdit=findViewById(R.id.main_2_dataEdit);
         classEdit=findViewById(R.id.main_2_classEdit);
 
-        TextView street=findViewById(R.id.main_2_street);
 
 
         Button back = findViewById(R.id.main_2_BACK);
@@ -44,6 +42,7 @@ public  class Main2Activity extends AppCompatActivity implements IonTextClick {
                 Intent intent = new Intent();
                 someClass.name = nameEdit.getText().toString();
                 someClass.street=streetEdit.getText().toString();
+                someClass.class1=classEdit.getText().toString();
                 Log.d("ololo", someClass.name);
                 intent.putExtra(MainActivity.RESULT_KEY, someClass);
                 setResult(RESULT_OK, intent);
@@ -60,21 +59,21 @@ public  class Main2Activity extends AppCompatActivity implements IonTextClick {
             streetEdit.setText(someClass.street);
 
         } else {
-            TextView name1 = findViewById(R.id.main_2_text);
+            TextView name = findViewById(R.id.main_2_text);
             name.setText("Nothing to show");
             TextView class1 = findViewById(R.id.main_2_class);
             name.setText("Nothing to show");
-            TextView street1 = findViewById(R.id.main_2_class);
+            TextView street1 = findViewById(R.id.main_2_street);
             name.setText("Nothing to show");
        }
     }
 
     public void Save(View view){
-        someClass.name= name.getText().toString();
+        someClass.name=nameEdit.getText().toString();
         someClass.class1 = classEdit.getText().toString();
         someClass.street = streetEdit.getText().toString();
-        TextView name = (TextView) findViewById(R.id.main_2_text);
-        name.setText(someClass.name);
+        TextView name1 = (TextView) findViewById(R.id.main_2_text);
+        name1.setText(someClass.name);
         TextView class1 = (TextView) findViewById(R.id.main_2_class);
         class1.setText(someClass.class1);
         TextView data1 = (TextView) findViewById(R.id.main_2_street);
